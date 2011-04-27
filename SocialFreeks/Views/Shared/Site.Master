@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+	    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+	    <link rel="stylesheet" href="../../Content/css/master.css" type="text/css" />
+	    <!--[if IE]>
+	        <link rel="stylesheet" href="../../Content/css/master-ie.css" type="text/css" />
+	    <![endif]-->
+	    <!--[if IE 7]>
+	        <link rel="stylesheet" href="../../Content/css/master-ie7.css" type="text/css" />
+	    <![endif]-->
+	    <script type="text/javascript" src="../../Content/js/prototype/1.6.1.0/prototype.js"></script>
+
+	    <script type="text/javascript" src="../../Content/js/scriptaculous/1.8.3/scriptaculous.js?load=effects"></script>
+
+    </head>
+<body>
+<div class="wrapper">
+	<div class="header clearfix">
+		<div class="right utility-navigation">
+			<div>
+				<ul>
+				  <li><%: Html.ActionLink("profile", "Index", "Profile", new {area="Account"}, null)%></li>
+				  <li><%: Html.ActionLink("account", "Index", "Home", new {area="Account"}, null)%></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+				  <li><%: Html.ActionLink("join", "Register", "Home", new {area="Account"}, null)%></li>
+				  <li class="last-nav"><%: Html.ActionLink("logout", "LogOff", "Home", new { area = "Account" }, null)%></li>
+				</ul>
+			</div>
+		</div>
+		<div><h1><%: Html.ActionLink("Social Freeks", "Index", "Main", new {area=""}, null)%></h1>
+		<div class="right user-info">
+		<%// Html.RenderPartial("LogOnUserControl"); %>
+			<h4>Hi there User Name</h4>
+			<div class="login-keeper">keep me logged in <input type="checkbox" /></div>
+		</div>
+	</div>
+	<div class="sub-nav clearfix">
+		<div id="sub-nav-right"></div>
+	</div>
+	<div id="content" class="clearfix">
+		<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+	</div>
+
+	<div id="footer-box" class="clearfix">
+	  <div class="footer-container">
+		<div class="freeks-stamp-box">
+		  <a class="footer-map" href="/"></a>
+		</div>
+		<div class="clearfix bottom-copy">
+		  <div class="left"><a href="http://www.socialfreeks.com/" target="_blank">Social Freeks &copy; 2011</a></div>
+		  <div class="right"><a href="http://www.socialfreeks.com/" target="_blank">Social Freeks &copy; 2011</a></div>
+		</div>
+	  </div>
+	</div>
+	<div class="clearfix" style="height:10px;"></div>
+</div>
+</body>
+</html>
