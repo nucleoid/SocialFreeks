@@ -51,6 +51,14 @@ namespace SocialFreeks.Models
     public class RegisterModel
     {
         [Required]
+        [DisplayName("First name")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [DisplayName("Last name")]
+        public string LastName { get; set; }
+
+        [Required]
         [DisplayName("User name")]
         public string UserName { get; set; }
 

@@ -120,22 +120,9 @@ namespace SocialFreeks.Tests.Areas.Account.Controllers
             // Assert
             Assert.IsInstanceOfType(result, typeof(RedirectToRouteResult));
             RedirectToRouteResult redirectResult = (RedirectToRouteResult)result;
-            Assert.AreEqual("Home", redirectResult.RouteValues["controller"]);
+            Assert.AreEqual("Main", redirectResult.RouteValues["controller"]);
             Assert.AreEqual("Index", redirectResult.RouteValues["action"]);
             Assert.IsTrue(((MockFormsAuthenticationService)controller.FormsService).SignOut_WasCalled);
-        }
-
-        [TestMethod]
-        public void LogOn_Get_ReturnsView()
-        {
-            // Arrange
-            HomeController controller = GetAccountController();
-
-            // Act
-            ActionResult result = controller.LogOn();
-
-            // Assert
-            Assert.IsInstanceOfType(result, typeof(ViewResult));
         }
 
         [TestMethod]

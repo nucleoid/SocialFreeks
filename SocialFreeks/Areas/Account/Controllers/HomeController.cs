@@ -2,6 +2,8 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
+using Services;
+using SocialFreeks.Entities;
 using SocialFreeks.Models;
 
 namespace SocialFreeks.Areas.Account.Controllers
@@ -23,12 +25,8 @@ namespace SocialFreeks.Areas.Account.Controllers
 
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult LogOn()
-        {
-            return View();
+            var user = ServiceFactory.Create<UserService>().FindByUserName(HttpContext.User.Identity.Name);
+            return View(user);
         }
 
         [HttpPost]
@@ -41,21 +39,15 @@ namespace SocialFreeks.Areas.Account.Controllers
                     FormsService.SignIn(model.UserName, model.RememberMe);
                     if (!String.IsNullOrEmpty(returnUrl))
                     {
-                        return Redirect(returnUrl);
+                        return new ContentResult { Content = returnUrl };
                     }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError("", "The user name or password provided is incorrect.");
+                    var helper = new UrlHelper(ControllerContext.RequestContext);
+                    var url = helper.Action("Index", "Home");
+                    return new ContentResult { Content = url };
                 }
             }
 
-            // If we got this far, something failed, redisplay form
-            return View(model);
+            return new ContentResult {Content = "<span>The user name or password provided is incorrect.<span>"};
         }
 
         // **************************************
@@ -86,9 +78,9 @@ namespace SocialFreeks.Areas.Account.Controllers
             {
                 // Attempt to register the user
                 MembershipCreateStatus createStatus = MembershipService.CreateUser(model.UserName, model.Password, model.Email);
-
                 if (createStatus == MembershipCreateStatus.Success)
                 {
+                    SaveUser(model);
                     FormsService.SignIn(model.UserName, false /* createPersistentCookie */);
                     return RedirectToAction("Index", "Home");
                 }
@@ -144,5 +136,10 @@ namespace SocialFreeks.Areas.Account.Controllers
             return View();
         }
 
+        private void SaveUser(RegisterModel model)
+        {
+            var user = new User {UserName = model.UserName, FirstName = model.FirstName, LastName = model.LastName};
+            ServiceFactory.Create<UserService>().Save(user);
+        }
     }
 }

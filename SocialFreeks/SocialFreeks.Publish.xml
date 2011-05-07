@@ -3,47 +3,47 @@
   <publishProfile publishUrl="C:\Users\Mitch\Desktop\Social_Freeks\deploy" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Default" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="Content/js/prototype/1.6.1.0/prototype.js" publishTime="04/26/2011 19:17:29" />
     <file relUrl="Areas/Account/Views/Home/ChangePasswordSuccess.aspx" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Areas/Account/Views/Home/ChangePassword.aspx" publishTime="05/05/2011 19:39:06" />
     <file relUrl="Scripts/MicrosoftAjax.js" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Content/js/scriptaculous/1.8.3/scriptaculous.js" publishTime="04/26/2011 19:17:30" />
     <file relUrl="Global.asax" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Areas/Account/Views/Home/LogOn.aspx" publishTime="05/05/2011 19:40:25" />
     <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="04/18/2011 16:43:32" />
-    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="04/18/2011 16:43:32" />
-    <file relUrl="bin/SocialFreeks.pdb" publishTime="04/26/2011 19:32:48" />
-    <file relUrl="Areas/Account/Views/Home/Register.aspx" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Content/js/scriptaculous/1.8.3/sound.js" publishTime="04/26/2011 19:17:30" />
+    <file relUrl="bin/SocialFreeks.pdb" publishTime="05/05/2011 19:30:22" />
+    <file relUrl="Areas/Account/Views/Home/Register.aspx" publishTime="05/05/2011 19:43:06" />
     <file relUrl="Content/js/scriptaculous/1.8.3/effects.js" publishTime="04/26/2011 19:17:29" />
-    <file relUrl="Areas/Account/Views/Home/Index.aspx" publishTime="04/26/2011 19:31:14" />
+    <file relUrl="Areas/Account/Views/Home/Index.aspx" publishTime="05/05/2011 19:41:39" />
     <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Content/img/subnav_right.gif" publishTime="04/26/2011 19:17:22" />
     <file relUrl="Content/img/getting_ready.gif" publishTime="04/26/2011 19:17:22" />
-    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Scripts/jquery.validate.min.js" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Content/img/top_gradient.gif" publishTime="04/26/2011 19:17:22" />
     <file relUrl="Content/img/footer_map.gif" publishTime="04/26/2011 19:17:22" />
-    <file relUrl="Views/Shared/Site.Master" publishTime="04/26/2011 19:30:30" />
     <file relUrl="Content/js/scriptaculous/1.8.3/controls.js" publishTime="04/26/2011 19:17:29" />
     <file relUrl="Content/js/scriptaculous/1.8.3/dragdrop.js" publishTime="04/26/2011 19:17:29" />
     <file relUrl="Content/img/logo.gif" publishTime="04/26/2011 19:17:22" />
     <file relUrl="Scripts/jquery.validate.js" publishTime="04/18/2011 16:43:32" />
-    <file relUrl="Areas/Account/Views/Profile/Index.aspx" publishTime="04/26/2011 19:31:14" />
-    <file relUrl="Areas/Account/Views/Home/LogOn.aspx" publishTime="04/18/2011 16:43:32" />
-    <file relUrl="bin/SocialFreeks.dll" publishTime="04/26/2011 19:32:48" />
+    <file relUrl="Areas/Account/Views/Profile/Index.aspx" publishTime="05/05/2011 19:42:09" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="bin/SocialFreeks.dll" publishTime="05/05/2011 19:30:22" />
     <file relUrl="Areas/Account/Views/Web.config" publishTime="04/18/2011 16:44:01" />
     <file relUrl="Content/js/scriptaculous/1.8.3/builder.js" publishTime="04/26/2011 19:17:29" />
     <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Content/css/master-ie7.css" publishTime="04/26/2011 19:17:15" />
-    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="05/05/2011 19:39:06" />
     <file relUrl="Content/css/master-ie.css" publishTime="04/26/2011 19:17:15" />
     <file relUrl="Views/Shared/Error.aspx" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Content/js/scriptaculous/1.8.3/slider.js" publishTime="04/26/2011 19:17:30" />
     <file relUrl="Content/css/master.css" publishTime="04/26/2011 19:33:51" />
-    <file relUrl="Web.config" publishTime="04/26/2011 19:44:41" />
-    <file relUrl="Content/js/scriptaculous/1.8.3/sound.js" publishTime="04/26/2011 19:17:30" />
-    <file relUrl="Views/Web.config" publishTime="04/18/2011 16:43:32" />
-    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Web.config" publishTime="05/05/2011 19:44:50" />
+    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Content/js/scriptaculous/1.8.3/unittest.js" publishTime="04/26/2011 19:17:30" />
     <file relUrl="Views/Main/Index.aspx" publishTime="04/26/2011 19:31:12" />
-    <file relUrl="Areas/Account/Views/Home/ChangePassword.aspx" publishTime="04/18/2011 16:43:32" />
+    <file relUrl="Views/Web.config" publishTime="04/18/2011 16:43:32" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="04/18/2011 16:43:32" />
   </publishProfile>
 </publishData>

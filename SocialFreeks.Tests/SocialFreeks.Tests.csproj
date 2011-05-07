@@ -62,9 +62,9 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SocialFreeks\SocialFreeks.csproj">
+    <ProjectReference Include="..\SocialFreeks\SocialFreeks.Web.csproj">
       <Project>{26ABFEC3-0F82-4AAC-8B35-527348BC7FB9}</Project>
-      <Name>SocialFreeks</Name>
+      <Name>SocialFreeks.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
