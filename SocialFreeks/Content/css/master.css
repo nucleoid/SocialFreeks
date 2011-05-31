@@ -356,7 +356,7 @@ custom
     .utility-navigation ul li{
 	    float: left;
 	    border: 1px solid #e6e6e6;
-	    width: 130px;
+	    width: 80px;
 	    text-align: center;
         background-color: #b3b3b3;
     }
@@ -367,11 +367,25 @@ custom
 	        color: #636363;
 	        display: block;
 	        text-decoration: none;
-	        padding: .2em;
-	        font-size: 1.5em;
+	        padding-bottom: .1em;
         }
-    
-        
+.utility-navigation td a {
+    border: 1px solid #e6e6e6;
+	width: 80px;
+	text-align: center;
+    background-color: #b3b3b3;
+    color: #636363;
+	display: block;
+	text-decoration: none;
+	padding-bottom: .1em;
+}
+.utility-navigation a:hover{
+    color: #78b649;
+}
+.utility-navigation a:active{
+    color: #78b649;
+    background-color: #145f97;
+}       
 .sub-nav{
 	background-color: #e6e6e6;
 	height: 100px;
@@ -390,21 +404,17 @@ div#content{
 	min-width: 960px;
 	
 }
-div#body-box{
-	background: url("../../Content/img/getting_ready.gif") no-repeat scroll center top transparent;
+.centered{
+    position: absolute;
+    left: 50%;
+    width: 650px;
     height: 366px;
+    margin-left: -325px;
 }
 .footer-container{
 	background-color: #e6e6e6;
 }
-.footer-container .footer-map{
-	background: url("../../Content/img/footer_map.gif") no-repeat scroll left top transparent;
-	float: left;
-	height: 100px;
-	padding-right: 20px;
-	text-indent: -9999px;
-	width: 184px;
-}
+
 .footer-container .bottom-copy{
 	display: block;
 	background-color: #999999;
@@ -424,3 +434,7 @@ background-color: #999999;
 .clearfix{
 	clear: both;
 }
+.blues {
+    color: #267bc4;
+}
+

@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server"/>
+</asp:Content>
+
+<asp:Content ID="StyleContent" ContentPlaceHolderID="StyleContent" runat="server">
+    <link rel="stylesheet" href="../../Content/css/menu_style.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="StyleContent" runat="server"/>
+</asp:Content>
+
+<asp:Content ID="ScriptContent" ContentPlaceHolderID="ScriptContent" runat="server">
+    <!--[if lt IE 7]>
+    <script type="text/javascript">
+
+    sfHover = function() {
+	    var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	    for (var i=0; i<sfEls.length; i++) {
+		    sfEls[i].onmouseover=function() {
+			    this.className+=" over";
+		    }
+		    sfEls[i].onmouseout=function() {
+			    this.className=this.className.replace(new RegExp(" over\\b"), "");
+		    }
+	    }
+    }
+    if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+    </script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="ScriptContent" runat="server"/>
+</asp:Content>
+
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+</asp:Content>
+
+<asp:Content ID="FooterContent" ContentPlaceHolderID="FooterContent" runat="server">
+<div id="footer-box" class="clearfix">
+	<div class="footer-container">
+	    <div class="freeks-stamp-box">
+            <ul id="nav">
+                <li>
+                <ul class="full">
+                    <li><a href="#" >Food Court</a></li>
+                    <li><a href="#" >Music</a></li>
+                    <li><a href="#" >Games</a></li>
+                    <li><a href="#" >Tech</a></li>
+                    <li><a href="#" >Television</a></li>
+                    <li><a href="#" >News</a></li>
+                </ul>
+                </li>
+            </ul>
+	    </div>
+	    <div class="clearfix bottom-copy">
+		    <div class="left"><a href="http://www.socialfreeks.com/" target="_blank">Social Freeks &copy; 2011</a></div>
+		    <div class="right"><a href="http://www.socialfreeks.com/" target="_blank">Social Freeks &copy; 2011</a></div>
+	    </div>
+	</div>
+</div>
+</asp:Content>

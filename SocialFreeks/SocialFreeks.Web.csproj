@@ -56,9 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\Account\AccountAreaRegistration.cs" />
-    <Compile Include="Areas\Account\Controllers\AccountController.cs" />
     <Compile Include="Areas\Account\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Account\Controllers\ProfileController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -68,15 +66,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Account\Views\Home\Index.aspx" />
-    <Content Include="Areas\Account\Views\Profile\Index.aspx" />
+    <Content Include="Content\css\imagemap\tooltip.css" />
     <Content Include="Content\css\master-ie.css" />
     <Content Include="Content\css\master-ie7.css" />
     <Content Include="Content\css\master.css" />
+    <Content Include="Content\css\menu_style.css" />
     <Content Include="Content\img\footer_map.gif" />
     <Content Include="Content\img\getting_ready.gif" />
+    <Content Include="Content\img\hover.gif" />
+    <Content Include="Content\img\hover_sub.gif" />
     <Content Include="Content\img\logo.gif" />
+    <Content Include="Content\img\seperator.gif" />
     <Content Include="Content\img\subnav_right.gif" />
     <Content Include="Content\img\top_gradient.gif" />
+    <Content Include="Content\js\imagemap\cvi_tip_lib.js" />
+    <Content Include="Content\js\imagemap\mapper.js" />
+    <Content Include="Content\js\imagemap\maputil.js" />
+    <Content Include="Content\js\imagemap\wz_jsgraphics.js" />
     <Content Include="Content\js\prototype\1.6.1.0\prototype.js" />
     <Content Include="Content\js\scriptaculous\1.8.3\builder.js" />
     <Content Include="Content\js\scriptaculous\1.8.3\controls.js" />
@@ -137,6 +143,9 @@
       <Project>{15C084E5-B791-48BC-882C-16D7CBCCD9D3}</Project>
       <Name>SocialFreeks.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Single.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

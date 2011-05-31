@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<SocialFreeks.Entities.User>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Single.Master" Inherits="System.Web.Mvc.ViewPage<SocialFreeks.Entities.User>" %>
 
 <asp:Content ID="registerTitle" ContentPlaceHolderID="TitleContent" runat="server">
     Account

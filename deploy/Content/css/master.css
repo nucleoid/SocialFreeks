@@ -390,21 +390,17 @@ div#content{
 	min-width: 960px;
 	
 }
-div#body-box{
-	background: url("../../Content/img/getting_ready.gif") no-repeat scroll center top transparent;
+.centered{
+    position: absolute;
+    left: 50%;
+    width: 650px;
     height: 366px;
+    margin-left: -325px;
 }
 .footer-container{
 	background-color: #e6e6e6;
 }
-.footer-container .footer-map{
-	background: url("../../Content/img/footer_map.gif") no-repeat scroll left top transparent;
-	float: left;
-	height: 100px;
-	padding-right: 20px;
-	text-indent: -9999px;
-	width: 184px;
-}
+
 .footer-container .bottom-copy{
 	display: block;
 	background-color: #999999;

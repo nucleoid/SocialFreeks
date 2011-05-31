@@ -8,7 +8,7 @@
 ** All Rights Reserved.
 */
 /**********************************************************************/
-
+use nucleoid_SocialFreeks
 PRINT '---------------------------------------'
 PRINT 'Starting execution of InstallCommon.SQL'
 PRINT '---------------------------------------'
@@ -26,7 +26,7 @@ DECLARE @dbname nvarchar(128)
 DECLARE @dboptions nvarchar(1024)
 
 SET @dboptions = N'/**/'
-SET @dbname = N'aspnetdb'
+SET @dbname = N'nucleoid_SocialFreeks'
 
 IF (NOT EXISTS (SELECT name
                 FROM master.dbo.sysdatabases
@@ -39,7 +39,7 @@ BEGIN
 END
 GO
 
-USE [aspnetdb]
+USE [nucleoid_SocialFreeks]
 GO
 
 /*************************************************************/
@@ -790,7 +790,7 @@ GO
 
 DECLARE @dbname nvarchar(128)
 
-SET @dbname = N'aspnetdb'
+SET @dbname = N'nucleoid_SocialFreeks'
 
 IF (NOT EXISTS (SELECT name
                 FROM master.dbo.sysdatabases
@@ -800,7 +800,7 @@ BEGIN
 END
 GO
 
-USE [aspnetdb]
+USE [nucleoid_SocialFreeks]
 GO
 
 IF (NOT EXISTS (SELECT name
@@ -2370,7 +2370,7 @@ GO
 
 DECLARE @dbname nvarchar(128)
 
-SET @dbname = N'aspnetdb'
+SET @dbname = N'nucleoid_SocialFreeks'
 
 IF (NOT EXISTS (SELECT name
                 FROM master.dbo.sysdatabases
@@ -2380,7 +2380,7 @@ BEGIN
 END
 GO
 
-USE [aspnetdb]
+USE [nucleoid_SocialFreeks]
 GO
 
 IF (NOT EXISTS (SELECT name
@@ -2993,7 +2993,7 @@ GO
 
 DECLARE @dbname nvarchar(128)
 
-SET @dbname = N'aspnetdb'
+SET @dbname = N'nucleoid_SocialFreeks'
 
 IF (NOT EXISTS (SELECT name
                 FROM master.dbo.sysdatabases
@@ -3003,7 +3003,7 @@ BEGIN
 END
 GO
 
-USE [aspnetdb]
+USE [nucleoid_SocialFreeks]
 GO
 
 IF (NOT EXISTS (SELECT name
@@ -4084,7 +4084,7 @@ GO
 
 DECLARE @dbname NVARCHAR(128)
 
-SET @dbname = N'aspnetdb'
+SET @dbname = N'nucleoid_SocialFreeks'
 
 IF (NOT EXISTS (SELECT name
                 FROM master.dbo.sysdatabases
@@ -4094,7 +4094,7 @@ BEGIN
 END
 GO
 
-USE [aspnetdb]
+USE [nucleoid_SocialFreeks]
 GO
 
 IF (NOT EXISTS (SELECT name
@@ -4968,7 +4968,7 @@ GO
 
 DECLARE @dbname NVARCHAR(128)
 
-SET @dbname = N'aspnetdb'
+SET @dbname = N'nucleoid_SocialFreeks'
 
 IF (NOT EXISTS (SELECT name
                 FROM master.dbo.sysdatabases
@@ -4978,7 +4978,7 @@ BEGIN
 END
 GO
 
-USE [aspnetdb]
+USE [nucleoid_SocialFreeks]
 GO
 
 IF (NOT EXISTS (SELECT name

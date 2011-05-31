@@ -6,6 +6,7 @@
         
 	    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
 	    <link rel="stylesheet" href="../../Content/css/master.css" type="text/css" />
+        <asp:ContentPlaceHolder ID="StyleContent" runat="server" />
 	    <!--[if IE]>
 	        <link rel="stylesheet" href="../../Content/css/master-ie.css" type="text/css" />
 	    <![endif]-->
@@ -13,6 +14,7 @@
 	        <link rel="stylesheet" href="../../Content/css/master-ie7.css" type="text/css" />
 	    <![endif]-->
 	    <script type="text/javascript" src="../../Scripts/jquery-1.4.1.min.js"></script>
+        <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
     </head>
 <body>
 <div class="wrapper">
@@ -21,13 +23,7 @@
 		    <div class="right utility-navigation">
 			    <div>
 				    <ul>
-				      <li><%= Html.ActionLink("profile", "Index", "Profile", new { area = "Account" }, null)%></li>
-				      <li><%= Html.ActionLink("account", "Index", "Home", new { area = "Account" }, null)%></li>
-				    </ul>
-			    </div>
-			    <div>
-				    <ul>
-				      <li class="empty"></li>
+				      <li><%= Html.ActionLink("profile", "Index", "Home", new { area = "Account" }, null)%></li>
 				      <li><%= Html.ActionLink("logout", "LogOff", "Home", new { area = "Account" }, null)%></li>
 				    </ul>
 			    </div>
@@ -40,28 +36,23 @@
                         <table cellspacing="0">
                             <tbody>
                                 <tr>
+                                    <td></td>
                                     <td><label style="display: none" class="error" for="UserName" id="UserName_error">User name is required</label><label for="UserName">User name</label></td>
                                     <td><label style="display: none" class="error" for="Password" id="Password_error">Password is required</label><label for="Password">Password</label></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
+                                    <td nowrap="nowrap"><span class="blues">keep me logged in</span><input id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" /></td>
                                     <td><input id="UserName" name="UserName" type="text" value="" /></td>
                                     <td><input id="Password" name="Password" type="password" /></td>
-                                    <td><input type="submit" value="Login" id="login-submit"/></td>
-                                </tr>
-                                <tr>
-                                    <td><input id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                                        <label for="RememberMe">Remember me?</label></td>
+                                    <td><a id="login-submit" href="#">log in</a></td>
+                                    <td><%= Html.ActionLink("join", "Register", "Home", new { area = "Account" }, null)%></td>
                                 </tr>
                             </tbody>
                         </table>
                     </form>
                 </div>
-			    <div>
-				    <ul>
-                      <li></li>
-				      <li class="last"><%= Html.ActionLink("join", "Register", "Home", new { area = "Account" }, null)%></li>
-				    </ul>
-			    </div>
 		    </div>
         <%}%>
 		<div><h1><%= Html.ActionLink("Social Freeks", "Index", "Main", new {area=""}, null)%></h1>
@@ -78,17 +69,7 @@
 		<asp:ContentPlaceHolder ID="MainContent" runat="server" />
 	</div>
 
-	<div id="footer-box" class="clearfix">
-	  <div class="footer-container">
-		<div class="freeks-stamp-box">
-		  <a class="footer-map" href="/"></a>
-		</div>
-		<div class="clearfix bottom-copy">
-		  <div class="left"><a href="http://www.socialfreeks.com/" target="_blank">Social Freeks &copy; 2011</a></div>
-		  <div class="right"><a href="http://www.socialfreeks.com/" target="_blank">Social Freeks &copy; 2011</a></div>
-		</div>
-	  </div>
-	</div>
+    <asp:ContentPlaceHolder ID="FooterContent" runat="server" />
 	<div class="clearfix" style="height:10px;"></div>
 </div>
 <script language="javascript">
